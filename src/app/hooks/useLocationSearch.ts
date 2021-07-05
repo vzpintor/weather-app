@@ -33,7 +33,6 @@ export const useLocationSearch = () => {
           l => l.result_type === ResultType.City,
         );
         setWeatherFiltered(filtered);
-        // console.log(JSON.stringify(response.data, null, 2));
       }
     } catch (error) {
       console.log('Falied to filter location.');

@@ -34,7 +34,6 @@ const useWeather = () => {
 
       if (response.ok) {
         setWeather(response.data);
-        // console.log('====> data', JSON.stringify(response.data, null, 2));
       }
       setIsLoading(false);
     } catch (e) {

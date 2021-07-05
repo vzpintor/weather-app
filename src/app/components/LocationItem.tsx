@@ -11,7 +11,6 @@ const LocationItem = ({location, setCurrentLocation}: ILocationItemProps) => {
     <TouchableOpacity
       style={styles.touche}
       onPress={() => {
-        console.log(location);
         setCurrentLocation(location);
       }}>
       <Text key={location.id}>{location.display}</Text>
